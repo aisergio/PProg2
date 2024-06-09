@@ -25,6 +25,10 @@ public class MainView {
             controller.setStage(primaryStage);
 
             Scene scene = new Scene(root, 400, 300);
+
+            // Cargar el archivo CSS
+            scene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
+
             primaryStage.setScene(scene);
             primaryStage.setTitle("Inicio");
             primaryStage.show();
