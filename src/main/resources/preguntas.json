@@ -1,0 +1,44 @@
+{
+  "geometria": [
+    {
+      "textoPregunta": "¿Cuál es el nombre de la fórmula que relaciona la longitud de los lados de un triángulo con su área?",
+      "opciones": ["a) Fórmula de Pitágoras", "b) Fórmula de Herón", "c) Fórmula de Euler", "d) Fórmula de Gauss"]
+    },
+    {
+      "textoPregunta": "¿Cuál es el número de lados de un heptágono?",
+      "opciones": ["a) 5", "b) 6", "c) 7", "d) 8"]
+    },
+    {
+      "textoPregunta": "¿Qué ángulo forma la manecilla de un reloj a las 6 en punto?",
+      "opciones": ["a) 90 grados", "b) 120 grados", "c) 180 grados", "d) 360 grados"]
+    }
+  ],
+  "trigonometria": [
+    {
+      "textoPregunta": "¿Cuál es el valor del seno de 45 grados?",
+      "opciones": ["a) √2/2", "b) 1/2", "c) √3/2", "d) 1"]
+    },
+    {
+      "textoPregunta": "¿Cuál es la función inversa del seno?",
+      "opciones": ["a) coseno", "b) tangente", "c) cosecante", "d) arcoseno"]
+    },
+    {
+      "textoPregunta": "¿Cuál es la fórmula de la ley de senos?",
+      "opciones": ["a) a/sin(A) = b/sin(B) = c/sin(C)", "b) a² + b² = c²", "c) (1 + cos(x))/2", "d) a² + b² - 2ab cos(C)"]
+    }
+  ],
+  "algebra": [
+    {
+      "textoPregunta": "¿Cuál es la solución de la ecuación x² - 4 = 0?",
+      "opciones": ["a) x = 2", "b) x = -2", "c) x = ±2", "d) x = 0"]
+    },
+    {
+      "textoPregunta": "¿Cuál es el método utilizado para resolver sistemas de ecuaciones lineales?",
+      "opciones": ["a) Método de Cramer", "b) Método de sustitución", "c) Método de eliminación", "d) Todas las anteriores"]
+    },
+    {
+      "textoPregunta": "¿Qué es una función cuadrática?",
+      "opciones": ["a) Una función de la forma ax² + bx + c", "b) Una función de la forma ax + b", "c) Una función de la forma ax³ + bx² + cx + d", "d) Ninguna de las anteriores"]
+    }
+  ]
+}

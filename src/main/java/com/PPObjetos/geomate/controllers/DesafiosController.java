@@ -1,10 +1,5 @@
 package com.PPObjetos.geomate.controllers;
 
-//import com.PPObjetos.geomate.views.AritmeticaView;
-//import com.PPObjetos.geomate.views.EstadisticaView;
-import com.PPObjetos.geomate.views.GeometriaView;
-//import com.PPObjetos.geomate.views.LogicaView;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,83 +10,51 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DesafiosController {
-    private Stage primaryStage;
 
-    public void setPrimaryStage(Stage stage) {
-        this.primaryStage = stage;
+    @FXML
+    private Button geometriaButton; // Botón para cargar preguntas de geometría
+    @FXML
+    private Button trigonometriaButton; // Botón para cargar preguntas de trigonometría
+    @FXML
+    private Button algebraButton; // Botón para cargar preguntas de álgebra
+
+    // Método para manejar el evento del botón de Geometría
+    @FXML
+    private void handleGeometria() {
+        cargarVista("GeometriaView.fxml", "geometria");
     }
 
+    // Método para manejar el evento del botón de Trigonometría
     @FXML
-    private Button botonRegresarInicio;
-
-    @FXML
-    private void regresarInicio() {
-        // Aquí debes implementar la lógica para regresar a la escena principal (MainView)
-        // Puedes usar el método cargarEscena() o implementar tu propia lógica de navegación
-        cargarEscena("/fxml/MainView.fxml");  // Ejemplo de cómo cargar la escena principal
+    private void handleTrigonometria() {
+        cargarVista("GeometriaView.fxml", "trigonometria");
     }
 
+    // Método para manejar el evento del botón de Álgebra
     @FXML
-    private void handleGeometria(ActionEvent event) {
+    private void handleAlgebra() {
+        cargarVista("GeometriaView.fxml", "algebra");
+    }
+
+    // Método genérico para cargar la vista y configurar el controlador con el handle adecuado
+    private void cargarVista(String fxmlPath, String handle) {
         try {
-            GeometriaView geometriaView = new GeometriaView();
-            geometriaView.mostrar(primaryStage);
-        } catch (IOException e) {
-            e.printStackTrace();
-            // Manejar la excepción de manera adecuada (mostrar un mensaje de error, etc.)
-        }
-    }
-
-
-
-
-/*
-    @FXML
-    private void handleAritmetica() {
-        try {
-            AritmeticaView aritmeticaView = new AritmeticaView();
-            aritmeticaView.mostrar(primaryStage);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    private void handleLogica() {
-        try {
-            LogicaView logicaView = new LogicaView();
-            logicaView.mostrar(primaryStage);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    private void handleEstadistica() {
-        try {
-            EstadisticaView estadisticaView = new EstadisticaView();
-            estadisticaView.mostrar(primaryStage);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-*/
-
-
-
-
-
-
-
-
-    private void cargarEscena(String rutaFXML) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(rutaFXML));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/" + fxmlPath));
             Parent root = loader.load();
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        } catch (Exception e) {
+
+            // Obtener el controlador asociado al FXML cargado
+            GeometriaController controller = loader.getController();
+
+            // Llamar al método cargarPreguntas con el handle correspondiente
+            controller.cargarPreguntas(handle);
+
+            // Crear y mostrar la nueva escena
+            Stage stage = new Stage();
+            stage.setTitle("Preguntas de " + handle);
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

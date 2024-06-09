@@ -1,0 +1,4 @@
+handle,pregunta,respuesta1,respuesta2,respuesta3,respuesta4
+handleGeometria,¿Cuál es el nombre de la fórmula que relaciona la longitud de los lados de un triángulo con su área?,Fórmula de Pitágoras,Fórmula de Herón,Fórmula de Euler,Fórmula de Gauss
+handleGeometria,¿Cuál es el número de lados de un heptágono?,5,6,7,8
+handleAngulos,¿Qué ángulo forma la manecilla de un reloj a las 6 en punto?,90 grados,120 grados,180 grados,360 grados

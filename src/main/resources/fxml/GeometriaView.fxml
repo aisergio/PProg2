@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.geometry.Insets?>
+
 <VBox xmlns:fx="http://javafx.com/fxml/1"
       xmlns="http://javafx.com/javafx/22.0.1"
       fx:controller="com.PPObjetos.geomate.controllers.GeometriaController"
       spacing="10" alignment="CENTER">
+
     <padding>
         <Insets top="20" right="20" bottom="20" left="5" />
     </padding>
 
-    <Label text="¿Cuál es el nombre de la fórmula que relaciona la longitud de los lados de un triángulo con su área?"/>
-    <fx:define>
-        <ToggleGroup fx:id="grupoPregunta1"/>
-    </fx:define>
-    <RadioButton text="a) Fórmula de Pitágoras" toggleGroup="$grupoPregunta1"/>
-    <RadioButton text="b) Fórmula de Herón" toggleGroup="$grupoPregunta1"/>
-    <RadioButton text="c) Fórmula de Euler" toggleGroup="$grupoPregunta1"/>
-    <RadioButton text="d) Fórmula de Gauss" toggleGroup="$grupoPregunta1"/>
-
-    <Label text="¿Cuál es el número de lados de un heptágono?"/>
-    <fx:define>
-        <ToggleGroup fx:id="grupoPregunta2"/>
-    </fx:define>
-    <RadioButton text="a) 5" toggleGroup="$grupoPregunta2"/>
-    <RadioButton text="b) 6" toggleGroup="$grupoPregunta2"/>
-    <RadioButton text="c) 7" toggleGroup="$grupoPregunta2"/>
-    <RadioButton text="d) 8" toggleGroup="$grupoPregunta2"/>
-
-    <Label text="¿Qué ángulo forma la manecilla de un reloj a las 6 en punto?"/>
-    <fx:define>
-        <ToggleGroup fx:id="grupoPregunta3"/>
-    </fx:define>
-    <RadioButton text="a) 90 grados" toggleGroup="$grupoPregunta3"/>
-    <RadioButton text="b) 120 grados" toggleGroup="$grupoPregunta3"/>
-    <RadioButton text="c) 180 grados" toggleGroup="$grupoPregunta3"/>
-    <RadioButton text="d) 360 grados" toggleGroup="$grupoPregunta3"/>
+    <!-- Este contenedor se llena dinámicamente -->
+    <VBox fx:id="preguntasContainer" spacing="10" alignment="CENTER"/>
 
     <Button text="Calcular Puntaje" onAction="#calcularPuntaje"/>
 </VBox>
