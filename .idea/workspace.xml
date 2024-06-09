@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48e99932-606d-480e-86e8-4076be06e4e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/controllers/ComodinesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/controllers/DesafiosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/controllers/InstruccionesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/views/ComodinesView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/views/DesafiosView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/views/InstruccionesView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/PPObjetos/geomate/views/MainView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Computerfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/ComodinesView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/DesafiosView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/InstruccionesView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainView.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="48e99932-606d-480e-86e8-4076be06e4e4" name="Changes" comment="Commit inicial del proyecto PProg2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +67,15 @@
       <option name="presentableId" value="Default" />
       <updated>1717920420740</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit inicial del proyecto PProg2">
+      <option name="closed" value="true" />
+      <created>1717937103713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717937103713</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit inicial del proyecto PProg2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial del proyecto PProg2" />
   </component>
 </project>
