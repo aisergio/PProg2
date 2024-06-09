@@ -5,8 +5,25 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PPObjetos.geomate.controllers.DesafiosController">
+
+    <!-- Centro: Contenido principal -->
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="5" />
+            </padding>
+            <Button text="Geometría" onAction="#handleGeometria"/>
+
+
+
+
+        </VBox>
+    </center>
+
+    <!-- Parte inferior: Botón para regresar -->
     <bottom>
         <HBox alignment="BOTTOM_RIGHT">
             <padding>
@@ -15,4 +32,5 @@
             <Button fx:id="botonRegresarInicio" text="&#8962;" styleClass="boton-regresar" onAction="#regresarInicio" />
         </HBox>
     </bottom>
+
 </BorderPane>

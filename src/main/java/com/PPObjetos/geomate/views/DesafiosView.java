@@ -6,27 +6,25 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException; // Importar IOException para manejar excepciones
+
 public class DesafiosView {
-    private final Stage primaryStage;
+    private final Stage primaryStage; // Stage principal de la aplicación
 
     public DesafiosView(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 
-    public void mostrar() {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/DesafiosView.fxml"));
-            Parent root = loader.load();
+    public void mostrar() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/DesafiosView.fxml"));
+        Parent root = loader.load();
 
-            DesafiosController controller = loader.getController();
-            controller.setStage(primaryStage); // Método para pasar el primaryStage al controlador
+        DesafiosController controller = loader.getController();
+        controller.setPrimaryStage(primaryStage); // Llama al método correcto setPrimaryStage
 
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("Desafíos");
-            primaryStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Desafíos");
+        primaryStage.show();
     }
 }

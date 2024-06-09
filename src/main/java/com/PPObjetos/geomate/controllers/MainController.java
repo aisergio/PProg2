@@ -4,9 +4,12 @@ import com.PPObjetos.geomate.views.DesafiosView;
 import com.PPObjetos.geomate.views.InstruccionesView;
 import com.PPObjetos.geomate.views.ComodinesView;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.SplitMenuButton;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainController {
     private Stage primaryStage;
@@ -28,8 +31,16 @@ public class MainController {
 
     @FXML
     private void irAPaginaDesafios() {
-        DesafiosView desafiosView = new DesafiosView(primaryStage);
-        desafiosView.mostrar();
+        try {
+            DesafiosView desafiosView = new DesafiosView(primaryStage);
+            desafiosView.mostrar();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("No se pudo cargar la página de desafíos.");
+            alert.showAndWait();
+        }
     }
 
     @FXML
